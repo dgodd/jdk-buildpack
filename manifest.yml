@@ -1,0 +1,20 @@
+---
+language: jdk
+default_versions: []
+dependency_deprecation_dates: []
+dependencies:
+- name: openjdk
+  version: 1.8.0
+  uri: https://buildpacks.cloudfoundry.org/dependencies/manual-binaries/jruby/openjdk-1.8.0_152-9a679af3.tar.gz
+  sha256: 9a679af33023a6f92c40043fbf72c596ecdee69f04790569a4ced914a6b6c60b
+  cf_stacks:
+  - cflinuxfs2
+pre_package: scripts/build.sh
+include_files:
+- README.md
+- CHANGELOG
+- LICENSE
+- VERSION
+- bin/compile
+- bin/supply
+- manifest.yml
